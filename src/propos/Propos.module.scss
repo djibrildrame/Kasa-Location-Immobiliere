@@ -1,0 +1,108 @@
+/* Conteneur principal pour la page */
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Même padding que la section Collapse */
+  margin: 20px 0;
+}
+
+.paysage {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  height: 145px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Collapse section */
+.customCollapseSection {
+  margin: 0 auto;
+  width: 73%; /* S'adapte à l'écran */
+  display: flex;
+  flex-direction: column;
+}
+
+.customCollapse {
+  margin-bottom: 20px; /* Espace entre les collapses */
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+  width: 74%;
+    margin-left: 13%;
+}
+
+.customCollapseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f66;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.customCollapseHeader h2 {
+  margin: 0;
+}
+
+.customArrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.customArrowOpen {
+  transform: rotate(180deg);
+}
+
+.customCollapseContent {
+  padding: 15px;
+  background-color: #F6F6F6;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .paysage {
+    width: 94%;
+
+  }
+
+  /* Ajoute un padding global pour l'ensemble de la section */
+  .customCollapseSection {
+    padding: 10px; /* Ajoute un espace autour des collapses */
+    width: calc(100% - 20px); /* Ajuste la largeur pour inclure le padding */
+    margin: 0 auto; /* Centre la section */
+  }
+
+  .customCollapse{
+
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .paysage {
+    height: 200px; /* Fixe une hauteur conséquente */
+    object-fit: cover; /* Garde le ratio */
+    border-radius: 10px; /* Maintient les coins arrondis */
+  }
+
+  .customCollapseHeader {
+    font-size: 16px;
+  }
+
+  .customCollapseContent {
+    font-size: 14px;
+  }
+}
+
+

@@ -1,0 +1,253 @@
+.card-link {
+  text-decoration: none; /* Supprime le soulignement uniquement pour les cards */
+  color: inherit; /* Garde la couleur héritée du parent */
+} 
+
+.container {
+    margin-top: 2%; 
+
+
+
+  }
+
+  .montagne{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+
+  .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px; /* Espace entre les cartes */
+        justify-content: space-evenly; /* Distribue les cartes avec un espace égal */
+        padding-top: 4%;
+        padding-bottom: 4%;
+  }
+  .image-container::after {
+    content: "Chez vous, partout et ailleurs"; /* Texte de l'overlay */
+    top: 0; /* Aligne en haut */
+    left: 0; /* Aligne à gauche */
+    width: 90%; /* Prend toute la largeur du conteneur */
+    height: 23%; /* Prend toute la hauteur du conteneur */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente pour l'overlay */
+    border-radius: 10px; /* Coin arrondis identiques à l'image */
+    display: flex; /* Utilise Flexbox pour centrer le texte */
+    justify-content: center; /* Centre horizontalement le texte */
+    align-items: center; /* Centre verticalement le texte */
+    font-size: 24px; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Aligne le texte au centre */
+    pointer-events: none; /* Permet de cliquer à travers l'overlay */
+    margin-left: 5%;
+    margin-top: -13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+
+
+  
+  }
+
+
+   
+  ///////////cards 
+ 
+
+  .cards {
+    width: 270px; /* Largeur du composant */
+    height: 270px; /* Hauteur du composant */
+    border-radius: 20px; /* Coins arrondis */
+    background-size: cover; /* Ajuste l'image de fond pour couvrir tout le conteneur */
+    background-position: center; /* Centre l'image de fond */
+    display: flex;
+    align-items: flex-end; /* Place le titre en bas */
+    justify-content: flex-start; /* Aligne le titre à gauche */
+    padding: 20px; /* Ajoute un espace entre le titre et les bords */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet au survol */
+    right: 10px;
+  flex-wrap: wrap;
+  object-fit: cover;
+  
+  
+    .thumb-title {
+      color: white; /* Couleur du texte */
+      font-size: 18px; /* Taille du texte */
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité sur une image */
+    }
+  }
+  
+  
+  .text {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+  }
+
+  @media(min-width: 1024px) {
+
+    .container-items{
+      background-color: #F6F6F6;
+      margin-top: 5%;
+      width: 90%;
+      margin-left: 5%;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+   
+      .image-container::after {
+        content: "Chez vous, partout et ailleurs";
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 20.2%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        pointer-events: none;
+        margin-left: 5%;
+        padding-top: 6%;
+        padding-bottom: 5.8%;
+        margin-top: -14%;
+      
+
+    }
+
+    
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .image-container::after {
+      content: "Chez vous, partout et ailleurs";
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 20.2%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      pointer-events: none;
+      margin-left: 5%;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      margin-top: -14%;
+  }
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .collapse-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .montagne{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espace entre les cartes */
+    margin-top: -12%;
+  }
+
+  .cards {
+    width: 410px; /* Largeur identique à celle du grand écran */
+    border-radius: 20px; /* Coins arrondis */
+    background-size: cover; /* Ajuste l'image pour remplir toute la carte */
+    background-position: center; /* Centre l'image de fond */
+    display: flex;
+    align-items: flex-end; /* Place le texte en bas */
+    justify-content: flex-start; /* Aligne le texte à gauche */
+    padding: 20px; /* Ajoute un espace entre le texte et le bord */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajoute un effet au survol */
+  }
+
+  .thumb-title {
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité sur l'image */
+  }
+
+  .text {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .collapse {
+    width: 100%;
+  }
+
+  .image-container::after {
+    content: "Chez vous, partout et ailleurs";
+    top: -57px;
+    left: 0;
+    width: 90%;
+    height: 23.2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    margin-left: 5%;
+    margin-top: -8.5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.container-items {
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+}
+
+
+

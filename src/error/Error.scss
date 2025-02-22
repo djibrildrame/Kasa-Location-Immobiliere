@@ -1,0 +1,102 @@
+/* Centrer les éléments principaux */
+.container-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Évite les marges indésirables */
+    gap: 70px;
+}
+
+/* Style du texte "404" */
+.error {
+    font-weight: bold;
+    font-size: 12rem; /* Taille pour grand écran */
+    color: #FF6060;
+    margin: 0;
+}
+
+
+
+/* Style du lien de retour */
+.returnaccueil {
+    font-size: 1rem;
+    color: black;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+/* Style du footer */
+footer {
+    width: 100%; /* Le footer occupe toute la largeur */
+    text-align: center;
+    background-color: #000; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    padding: 10px 0; /* Espacement intérieur */
+    position: absolute; /* Le footer reste en bas de la page */
+    bottom: 0; /* Positionnement */
+}
+
+
+/* Texte explicatif sous "404" */
+.page {
+    font-size: 2rem; /* Réduit la taille pour mobile */
+    color: #FF6060;
+    margin-top: 10px;
+    text-align: center;
+    /* Forcer une partie à aller à la ligne */
+    word-break: break-word; /* Coupe proprement les mots si nécessaire */
+    display: inline-block; /* Permet un contrôle plus précis */
+    
+    
+}
+
+/* Lien "Retourner sur la page d'accueil" */
+.returnaccueil {
+    font-size: 1rem; /* Taille ajustée pour mobile */
+    color: black;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+    /* Footer ajusté pour mobile */
+    footer {
+        width: 100%; /* Occupe toute la largeur */
+        padding: 10px 0; /* Espacement réduit */
+        background-color: #000; /* Fond noir */
+        color: white; /* Texte blanc */
+        text-align: center;
+        font-size: 0.8rem; /* Texte plus petit */
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+        /* Conteneur principal centré */
+        .container-error {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px; /* Ajoute un peu d'espace autour */
+        }
+    
+       
+        /* Texte "404" */
+        .error {
+            font-size: 6rem; /* Réduit la taille pour mobile */
+            margin: 0;
+            margin-top: 29%;
+        }
+
+        .page{
+            font-size: 40px;
+           
+        }
+
+        .returnaccueil{
+            font-size: 20px;
+        }
+        }

@@ -1,0 +1,63 @@
+/* Container principal du header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+
+  }
+  
+  /* Conteneur du logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 150px; /* Taille fixe pour le logo */
+    height: auto;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    gap: 20px; /* Espacement entre les liens */
+  }
+  
+  /* Liens de navigation */
+  .nav-link {
+    
+    color: #333; /* Couleur du texte */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transition pour un effet au survol */
+  }
+
+  .link2{
+    text-decoration: none;
+  }
+  
+  .footer{
+
+    background: black;
+    margin-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+  }
+
+  .kasafooter{
+    font-size: 17px;
+    color: white;
+    text-align: center;
+  }
+
+  .footerlogo{
+    width: 100px;
+    margin: auto;
+  }
