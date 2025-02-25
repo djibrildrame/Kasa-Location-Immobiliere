@@ -6,9 +6,11 @@
   flex-direction: column;
   min-height: 50vh; /* Permet d’être flexible selon la taille de l’écran */
   height: auto; /* Empêche un espace fixe inutile */
-  
-  
+
+    position: relative;
 }
+  
+  
 
 .main-container {
 
@@ -26,15 +28,17 @@ margin: 0 auto;
 object-fit: cover;
 }
 
+
 .slide-counter {
-  position: absolute;
-  top: 58%;
+  position: relative;
+  top: -177px;  /* Ajuste cette valeur pour la hauteur */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);  /* Corrige l'alignement horizontal */
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Ajuste selon le contenu */
+  height: auto;
   width: 100%;
   z-index: 10;
   color: white;
@@ -42,7 +46,9 @@ object-fit: cover;
 }
 
 
+
 .banner-img {
+  position: relative;
   width: 100%;
   max-width: 90%;
   height: 400px;
@@ -54,9 +60,9 @@ object-fit: cover;
 
 /* Arrows */
 .arrow {
-  position: absolute;
+  position: relative;
   top: 35%;
-  transform: translateY(-50%);
+  transform: translateY(-241%);
   width: 100%;
   display: flex;
     flex-direction: row;
@@ -92,13 +98,15 @@ margin-left: 8%;
 
 .presentation{
 margin-top: 2%;
-margin-right: 5%;
+margin-right: 6%;
 }
 
 .oeuvre{
-display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  top: -149px;
 
 }
 
@@ -109,7 +117,6 @@ margin-left: 5%;
 .appartement{
 display: flex;
 flex-direction: column;
-
 }
 
 h1{
@@ -120,10 +127,14 @@ font-weight: 400;
 .container-tag{
 display : flex;
 flex-direction: row;
+position: relative;
+top: -30px;
+left: -5px;
 }
 
 .location{
-margin-top: 0%;
+  position: relative;
+  top: -28px;
 }
 
 .tag {
@@ -157,16 +168,15 @@ margin-left: -15%;
 
 
 .identite{
-
-margin-top: 11px;
 color: #f66;
-margin-right: 3%;
+margin-right: 7%;
 }
 
 .star {
 display: flex;
 gap:7px; /* Espacement entre les étoiles */
-margin-top: 36%;
+position:relative;
+top: -30px;
 }
 
 
@@ -179,6 +189,16 @@ color: #e3e3e3;
 }
 
 
+.nom{
+  position: relative;
+    top: -42%;
+    margin-left: 39%;
+}
+
+.prenom{
+  margin-left: 18%;
+}
+
 //Collapse//
 
 
@@ -188,10 +208,11 @@ color: #e3e3e3;
 margin: 0 auto;
 display: flex;
 justify-content: space-evenly;
-margin-top: 3%;
 gap: 20px;
 margin-left: 4%;
-  width: 92%;
+width: 92%;
+position: relative;
+top: -155px;
 }
 
 .collapse {
@@ -220,13 +241,13 @@ flex: 1; /* Le titre occupe l'espace restant */
 }
 
 .collapse-header .arrow {
-font-size: 20px;
-color: white;
-margin-left: 10px;
-transition: transform 0.3s ease;
-margin-left: 59%;
-margin-top: 10px;
-margin-left: 41%;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3 ease;
+  margin-top: 10px;
+  margin-left: 59%;
+  position: relative;
+  top: 42px;
 }
 
 .collapse-header .arrow.open {
@@ -268,8 +289,9 @@ font-size: 16px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    transform: translateY(-240%);
     z-index: 10;
+    margin-top: 10%;
 
 }
 
@@ -283,17 +305,20 @@ font-size: 16px;
 }
 
 .slide-counter {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: auto; /* Ajuste selon le contenu */
   width: 100%;
-  overflow: hidden;
   z-index: 10;
   color: white;
-  margin-top: 47%;
   font-size: 25px;
 }
+
 
 .arrow-left{
   margin-left: 4%;
@@ -342,7 +367,7 @@ margin-left: 4%;
   justify-content: space-between;
   transform: translateY(-50%);
   z-index: 10;
-  top: 32%;
+  top: 100%;
 
 }
 
@@ -350,6 +375,7 @@ margin-left: 4%;
   display : flex;
   flex-direction: row;
   margin-left: -3.5px;
+
     }
 
     .presentation {
@@ -422,5 +448,18 @@ margin-top: 3%;
 }
 }
 
+@media (min-width: 320px) and (max-width: 787px){
 
+  .banner-img {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    margin-left: 5%;
+  }
+
+}
 

@@ -83,13 +83,13 @@ const Slider = () => {
         <div className="presentation">
           <div className="auteur">
             <div className="identite">
-              <span className="prenom">
+              <p className="prenom">
                 {logement.host.name.split(" ")[0]}
-              </span>
+              </p>
               <br />
-              <span className="nom">
+              <p className="nom">
                 {logement.host.name.split(" ")[1]}
-              </span>
+              </p>
             </div>
             <img
               src={logement.host.picture}
