@@ -365,10 +365,9 @@ margin-left: 4%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
+  align-items: center;
+  margin-top: -26px; /* Monte les flèches sans absolute */
   z-index: 10;
-  top: 100%;
-
 }
 
 .container-tag{
@@ -465,7 +464,7 @@ margin-top: 3%;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    top: -129px;
+    top: -79px;
   }
 
   .presentation {
@@ -485,15 +484,27 @@ margin-top: 3%;
     gap: 7px;
     justify-content: flex-start; /* Aligner à gauche */
     align-items: center;
-    margin-left: 0;
+    margin-left: -5%;
   }
 
   .auteur {
     display: flex;
     flex-direction: row;
     justify-content: flex-end; /* Aligner à droite */
+    margin-right: -1%;
 
   }
+
+  .identite {
+    color: #f66;
+    margin-right: -8%;
+}
+
+.nom {
+  position: relative;
+  top: -42%;
+  margin-left: 23%;
+}
 
   .collapse {
     margin-bottom: 20px;
@@ -509,7 +520,7 @@ margin-top: 3%;
     gap: 0px;
     margin-left: 4%;
     width: 92%;
-    margin-top: -3%;
+            margin-top: 11%;
  
 }
 
