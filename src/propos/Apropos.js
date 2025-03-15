@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderPropos from "../headerfooter/HeaderPropos";
-import Footer from "../headerfooter/Footer";
+import FooterPropos from "../propos/FooterPropos";
 import Paysage from "../photo/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
 import Collapse from "../propos/Collapse";
 import styles from "../propos/Propos.module.scss"; // Import du fichier CSS module
@@ -40,7 +40,7 @@ const Apropos = () => {
         />
       </div>
 
-      <Footer />
+      <FooterPropos />
     </div>
   );
 };

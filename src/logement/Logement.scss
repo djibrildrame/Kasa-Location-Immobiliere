@@ -245,9 +245,9 @@ flex: 1; /* Le titre occupe l'espace restant */
   color: white;
   transition: transform 0.3 ease;
   margin-top: 10px;
-  margin-left: 59%;
-  position: relative;
-  top: 42px;
+  position: absolute;
+  top: 57px;
+  left: 42%;
 }
 
 .collapse-header .arrow.open {
@@ -408,7 +408,7 @@ margin-top: 3%;
   color: white;
   margin-left: 10px;
   transition: transform 0.3 ease;
-  margin-left: 80%;
+ 
   margin-top: 10px;
 }
 

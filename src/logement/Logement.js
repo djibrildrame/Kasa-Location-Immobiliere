@@ -5,7 +5,8 @@ import "../logement/Logement.scss";
 import Slider from "./Slider";
 import CollapseLog from "./CollapseLog";
 import data from "../data.json";
-import Footer from "../headerfooter/Footer";
+import Footer from "../logement/FooterLog";
+
 
 const Logement = () => {
   const { id } = useParams(); // Récupère l'ID du logement depuis l'URL
