@@ -105,8 +105,8 @@ margin-right: 6%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  top: -149px;
+  
+
 
 }
 
@@ -211,8 +211,7 @@ justify-content: space-evenly;
 gap: 20px;
 margin-left: 4%;
 width: 92%;
-position: relative;
-top: -155px;
+
 }
 
 .collapse {
@@ -262,10 +261,35 @@ font-size: 16px;
 }
 
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
+
+  .oeuvre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -14%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1024px){
+
+  .oeuvre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -16%;
+}
+}
 
 
+@media (min-width: 768px) and (max-width: 900px){
 
+  .oeuvre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -16%;
+}
 }
 
 
@@ -463,8 +487,8 @@ margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    top: -79px;
+    margin-top: -15%;
+   
   }
 
   .presentation {
@@ -501,8 +525,7 @@ margin-top: 3%;
 }
 
 .nom {
-  position: relative;
-  top: -42%;
+ 
   margin-left: 23%;
 }
 
@@ -520,7 +543,7 @@ margin-top: 3%;
     gap: 0px;
     margin-left: 4%;
     width: 92%;
-            margin-top: 11%;
+    margin-top: -6%;
  
 }
 
