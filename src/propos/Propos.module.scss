@@ -7,15 +7,16 @@
 }
 
 .paysage {
-  width: 90%;
+  width: 92%;
   display: flex;
   margin: 0 auto;
-  height: 145px;
+  height: 200px;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: cover; 
+  margin-left: 4%;
 }
 
-/* Collapse section */
+/* Collapse rsection */
 .customCollapseSection {
   margin: 0 auto;
   width: 73%; /* S'adapte à l'écran */
