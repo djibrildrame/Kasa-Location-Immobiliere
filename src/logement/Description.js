@@ -11,9 +11,6 @@ const Slider = () => {
 
   const [activeIndex, setActiveIndex] = useState(0); // État pour gérer l'index actif
 
-  if (!logement) {
-    return <h1>Logement introuvable</h1>; // Message si l'ID est invalide
-  }
 
   const prevSlide = () => {
     setActiveIndex((prevIndex) =>
