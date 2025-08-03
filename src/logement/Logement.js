@@ -18,14 +18,11 @@ const Logement = () => {
     setOpenCollapse(openCollapse === index ? null : index); // Active ou désactive le collapse
   };
 
-  // Gérer le cas où aucun logement correspondant à l'ID n'est trouvé
-  if (!logement) {
-    return <p>Logement non trouvé. Veuillez vérifier l'URL.</p>;
-  }
 
   return (
     <div>
       <HeaderLog />
+      
       {/* Slider pour afficher les images du logement */}
       <Slider pictures={logement.pictures} />
 
