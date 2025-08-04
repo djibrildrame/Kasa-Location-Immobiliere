@@ -65,8 +65,12 @@ object-fit: cover;
   transform: translateY(-241%);
   width: 100%;
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .arrow-left,

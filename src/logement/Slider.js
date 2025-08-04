@@ -44,7 +44,7 @@ const Slider = () => {
         </div>
 
         {/* Flèches pour naviguer */}
-        <div className="arrow">
+        <div className={`arrow ${logement.pictures.length > 1 ? 'visible' : 'hidden'}`}>
           <FontAwesomeIcon
             icon={faChevronLeft}
             onClick={prevSlide}
@@ -58,7 +58,7 @@ const Slider = () => {
         </div>
 
         {/* Indicateur de numéro d'image */}
-        <div className="slide-counter">
+        <div className={`slide-counter ${logement.pictures.length > 1 ? 'visible' : 'hidden'}`}>
           {activeIndex + 1}/{logement.pictures.length}
         </div>
       </div>
